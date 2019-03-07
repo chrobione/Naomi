@@ -143,7 +143,7 @@ if [ $OPTION = "1" ]; then
     echo 'VirtualEnv setup'
     if [ $APT -eq 1 ]; then
         echo 'Making sure you have the latest python, pip, python3 and pip3 installed on your system'
-        SUDO_COMMAND "sudo apt-get install python python-pip python3 python3-pip"
+        SUDO_COMMAND "sudo apt-get install python python-pip python3 python3-pip python-setuptools python3-setuptools python-dev python3-dev"
     else
         ERROR=""
         if [[ $(CHECK_PROGRAM python) -ne "0" ]]; then
